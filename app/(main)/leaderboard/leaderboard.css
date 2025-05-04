@@ -1,0 +1,289 @@
+/* Leaderboard Container */
+.leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.leaderboard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Tabs Styling */
+.leaderboard-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.leaderboard-tabs-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.leaderboard-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Current User Card */
+.current-user-card {
+  background-color: rgba(var(--primary-rgb), 0.05);
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.current-user-header {
+  padding: 0.75rem 1rem;
+  padding-bottom: 0;
+}
+
+.current-user-content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.current-user-rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+}
+
+.current-user-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.75rem;
+}
+
+.current-user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.current-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-user-name {
+  font-weight: 600;
+}
+
+.current-user-level {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.current-user-coins {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+/* Leaderboard Table */
+.leaderboard-card {
+  overflow: hidden;
+}
+
+.leaderboard-content {
+  padding: 0;
+}
+
+.leaderboard-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+.leaderboard-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.leaderboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.current-user-row {
+  background-color: rgba(var(--primary-rgb), 0.05);
+}
+
+/* Table Columns */
+.rank-column {
+  width: 4rem;
+}
+
+.player-column {
+  min-width: 12rem;
+}
+
+.level-column {
+  width: 5rem;
+}
+
+.coins-column {
+  width: 8rem;
+  text-align: right;
+}
+
+/* Player Info */
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.player-avatar {
+  width: 2rem;
+  height: 2rem;
+}
+
+.player-name {
+  font-weight: 500;
+}
+
+.player-level {
+  font-weight: 500;
+}
+
+.player-coins {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* Rank Badge */
+.rank-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--muted);
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.rank-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.rank-first {
+  color: #ffd700; /* Gold */
+}
+
+.rank-second {
+  color: #c0c0c0; /* Silver */
+}
+
+.rank-third {
+  color: #cd7f32; /* Bronze */
+}
+
+.rank-number {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Coin Icon */
+.coin-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #ffc107;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: white;
+  position: relative;
+}
+
+.coin-icon::after {
+  content: "B";
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.coin-amount {
+  font-weight: 600;
+}
+
+/* Avatar Fallback Icon */
+.avatar-fallback-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .rank-column {
+    width: 3rem;
+  }
+
+  .player-column {
+    min-width: 8rem;
+  }
+
+  .level-column {
+    width: 4rem;
+  }
+
+  .coins-column {
+    width: 6rem;
+  }
+
+  .player-info {
+    gap: 0.5rem;
+  }
+
+  .current-user-content {
+    flex-wrap: wrap;
+  }
+
+  .current-user-rank {
+    min-width: 2rem;
+  }
+}
+
+/* CSS Variables for theming */
+:root {
+  --primary-rgb: 142, 76, 36; /* RGB values for primary color */
+}
