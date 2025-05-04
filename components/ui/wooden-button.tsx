@@ -11,21 +11,21 @@ const woodenButtonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[#D2B48C] text-[#2F4F4F] shadow-sm border-b-4 border-[#A67C52] hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#D2B48C]/70 disabled:border-[#A67C52]/70 disabled:text-[#2F4F4F]/70 disabled:shadow-none disabled:scale-100",
+          "bg-[#D2B48C] text-[#2F4F4F] shadow-sm border-b-4 border-[#A67C52] hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#D2B48C]/70 disabled:border-[#A67C52]/70 disabled:text-[#2F4F4F]/70 disabled:shadow-none disabled:scale-100",
         green:
-          "bg-[#2E8B57] text-[#FAFAFA] shadow-sm border-b-4 border-[#1D5D38] hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#2E8B57]/70 disabled:border-[#1D5D38]/70 disabled:text-[#FAFAFA]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#1D5D38]",
+          "bg-[#2E8B57] text-[#FAFAFA] shadow-sm border-b-4 border-[#1D5D38] hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#2E8B57]/70 disabled:border-[#1D5D38]/70 disabled:text-[#FAFAFA]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#1D5D38]",
         "tailwind-green":
-          "bg-green-500 text-white shadow-sm border-b-4 border-green-600 hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-green-500/70 disabled:border-green-600/70 disabled:text-white/70 disabled:shadow-none disabled:scale-100 focus:ring-green-400",
+          "bg-green-500 text-white shadow-sm border-b-4 border-green-600 hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-green-500/70 disabled:border-green-600/70 disabled:text-white/70 disabled:shadow-none disabled:scale-100 focus:ring-green-400",
         "tailwind-yellow":
-          "bg-yellow-500 text-gray-800 shadow-sm border-b-4 border-yellow-600 hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-yellow-500/70 disabled:border-yellow-600/70 disabled:text-gray-800/70 disabled:shadow-none disabled:scale-100 focus:ring-yellow-400",
+          "bg-yellow-500 text-gray-800 shadow-sm border-b-4 border-yellow-600 hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-yellow-500/70 disabled:border-yellow-600/70 disabled:text-gray-800/70 disabled:shadow-none disabled:scale-100 focus:ring-yellow-400",
         "tailwind-stone":
-          "bg-stone-200 text-stone-700 shadow-sm border-b-4 border-stone-300 hover:bg-stone-300 hover:scale-105 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-stone-200/70 disabled:border-stone-300/70 disabled:text-stone-700/70 disabled:shadow-none disabled:scale-100 focus:ring-stone-400",
-        blue: "bg-[#4682B4] text-[#FAFAFA] shadow-sm border-b-4 border-[#2B5174] hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#4682B4]/70 disabled:border-[#2B5174]/70 disabled:text-[#FAFAFA]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#2B5174]",
-        pink: "bg-[#FFB6C1] text-[#2F4F4F] shadow-sm border-b-4 border-[#E5919C] hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#FFB6C1]/70 disabled:border-[#E5919C]/70 disabled:text-[#2F4F4F]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#E5919C]",
+          "bg-stone-200 text-stone-700 shadow-sm border-b-4 border-stone-300 hover:bg-stone-300 hover:scale-105 active:scale-95 active:bg-stone-400 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-stone-200/70 disabled:border-stone-300/70 disabled:text-stone-700/70 disabled:shadow-none disabled:scale-100 focus:ring-stone-400",
+        blue: "bg-[#4682B4] text-[#FAFAFA] shadow-sm border-b-4 border-[#2B5174] hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#4682B4]/70 disabled:border-[#2B5174]/70 disabled:text-[#FAFAFA]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#2B5174]",
+        pink: "bg-[#FFB6C1] text-[#2F4F4F] shadow-sm border-b-4 border-[#E5919C] hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#FFB6C1]/70 disabled:border-[#E5919C]/70 disabled:text-[#2F4F4F]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#E5919C]",
         yellow:
-          "bg-[#FFFFE0] text-[#2F4F4F] shadow-sm border-b-4 border-[#E5E5C7] hover:scale-105 hover:brightness-110 active:animate-click-flash active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#FFFFE0]/70 disabled:border-[#E5E5C7]/70 disabled:text-[#2F4F4F]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#E5E5C7]",
+          "bg-[#FFFFE0] text-[#2F4F4F] shadow-sm border-b-4 border-[#E5E5C7] hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 active:border-b-0 active:border-t-4 active:translate-y-[4px] disabled:opacity-50 disabled:bg-[#FFFFE0]/70 disabled:border-[#E5E5C7]/70 disabled:text-[#2F4F4F]/70 disabled:shadow-none disabled:scale-100 focus:ring-[#E5E5C7]",
         outline:
-          "border-2 border-[#D2B48C] bg-background text-[#2F4F4F] hover:bg-[#D2B48C]/10 hover:scale-105 hover:brightness-110 active:animate-click-flash active:scale-95 disabled:opacity-50 disabled:bg-transparent disabled:text-[#2F4F4F]/70 focus:ring-[#D2B48C]",
+          "border-2 border-[#D2B48C] bg-background text-[#2F4F4F] hover:bg-[#D2B48C]/10 hover:scale-105 hover:brightness-110 active:scale-95 active:brightness-90 disabled:opacity-50 disabled:bg-transparent disabled:text-[#2F4F4F]/70 focus:ring-[#D2B48C]",
       },
       size: {
         default: "h-12 px-4 py-2",
@@ -38,6 +38,7 @@ const woodenButtonVariants = cva(
         pulse: "animate-subtle-pulse",
         "pulse-yellow": "animate-subtle-pulse-yellow",
         "pulse-blue": "animate-subtle-pulse-blue",
+        flash: "active:animate-click-flash",
       },
     },
     defaultVariants: {
