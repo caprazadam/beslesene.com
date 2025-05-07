@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Game App",
   description: "Mobile game application",
-    generator: 'v0.dev'
+    generator: 'beslesene'
 }
 
 export default function RootLayout({
